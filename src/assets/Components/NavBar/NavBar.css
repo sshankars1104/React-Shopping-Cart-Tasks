@@ -1,0 +1,82 @@
+nav {
+    width: 100%;
+    background: #F8F9FA;
+    color: rgb(33, 37, 41);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+}
+
+nav .navbar-brand {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: cursive;
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    /* border: none; */
+    border-radius: 5px;
+    /* color: #fff; */
+    /* background-color: #007bff; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .btn:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.navbar-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.navbar-content ul li {
+    font-size: 20px;
+    padding: 20px;
+    list-style-type: none;
+    font-weight: 500;
+}
+i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+.cart-count {
+    color: red;
+    font-size: 14px;
+    margin-left: 5px;
+    /* background-color: black; */
+    padding: 7px;
+    /* border-radius: 50%; */
+}
+.navbar-content ul li:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+}
